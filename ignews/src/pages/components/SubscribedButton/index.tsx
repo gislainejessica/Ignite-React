@@ -1,10 +1,9 @@
-import { FaGithub } from 'react-icons/fa'
-import { FiX } from 'react-icons/fi'
 import styles from './styles.module.scss'
+interface SubscribedButtonProps {
+  priceId: string
+}
 
-export function SubscribedButton() {
-
-  const isUserLoggedIn = true
+export function SubscribedButton({ priceId }: SubscribedButtonProps) {
 
   return (
     <button type="button" className={styles.subscribedButton}>
